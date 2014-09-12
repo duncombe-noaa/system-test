@@ -44,4 +44,10 @@ install:
     - conda info -a
 
 script:
-    - cd housekeeping/test &&  nosetests --verbose --nocapture test_system-test_rules.py
+    - cd test &&  nosetests --verbose --nocapture
+    
+branches:
+    except: 
+        - issues
+        
+
