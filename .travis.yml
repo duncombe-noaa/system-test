@@ -45,3 +45,9 @@ install:
 
 script:
     - cd test &&  nosetests --verbose --nocapture
+    
+branches:
+    except: 
+        - issues
+        
+
