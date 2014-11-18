@@ -1,0 +1,11 @@
+# We do not want to version control all the data that we download with our 
+# scripts.
+# We'll put the files here and ignore them.
+# Start by ignoring everything
+*
+# but right now we don't want to ignore the file that retains this empty
+# directory, and if there are subdirectories here, lets keep them too
+!*/
+!.gitignore
+!.gitkeep
+!.keep
