@@ -1,0 +1,32 @@
+# create the environment that works for this notebook
+# 
+
+# what works for the workshop
+# 
+# git clone https://github.com/Unidata/unidata-python-workshop 
+# conda config --add channels https://conda.binstar.org/rsignell 
+# conda config --add channels https://conda.binstar.org/Unidata 
+# conda create -n workshop python=2 numpy matplotlib cartopy ipython ipython-notebook netcdf4 owslib pyudl networkx basemap
+# cd unidata-python-workshop
+# 
+# # in case there were last minute changes
+# git pull 
+# source activate workshop
+# ipython notebook
+
+# what does not work from Rich's hints
+
+# #! /bin/bash
+# ##    13  git clone http://github.com/duncombe/system-test.git
+# # mkdir Theme4GliderData
+# # cd  Theme4GliderData
+# conda config --add channels wakari  || { echo failed at 1; exit 1 ; } 
+# [ ! -d "envs/glider_test" ] && 
+# 	{ conda create -n glider_test --clone=/opt/wakari/anaconda  || { echo failed at 2; exit 2 ;} ;} ||
+# 	echo skipping, env already exists
+# conda config --add channels https://conda.binstar.org/rsignell  || { echo failed at 3; exit 3 ;}
+# conda install -p /projects/duncombe/Theme4GliderData/envs/glider_test  iris pyoos netcdf4 || { echo failed at 4; exit 4 ;}
+
+
+# vim: se nowrap tw=0 :
+
