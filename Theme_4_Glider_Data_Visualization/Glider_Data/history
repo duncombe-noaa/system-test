@@ -1,0 +1,2000 @@
+ 2247  ls -ltr
+ 2248  source deactivate
+ 2249  conda config --add channels https://conda.binstar.org/rsignell
+ 2250  conda config --add channels https://conda.binstar.org/Unidata
+ 2251  conda create -n workshop python=2 numpy matplotlib cartopy ipython ipython-notebook netcdf4 owslib pyudl networkx basemap
+ 2252  source activate workshop
+ 2253  conda list 
+ 2254  conda list --revisions
+ 2255  conda list --revisions| less
+ 2256  ipython notebook &
+ 2257  jobs
+ 2258  man sigint
+ 2259  man signal
+ 2260  man kill
+ 2261  kill -l
+ 2262  man kill 
+ 2263  kill -2 %1
+ 2264  jobs
+ 2265  kill -9 %1
+ 2266  ls -ltr
+ 2267  git status
+ 2268  vi CMDR-notes.ipynb 
+ 2269  git status
+ 2270  vi CMDR-notes.ipynb 
+ 2271  ipython notebook &
+ 2272  vi CMDR-notes.ipynb 
+ 2273  git checkout --help
+ 2274  git checkout my-workshop CMDR-notes.ipynb
+ 2275  vi CMDR-notes.ipynb 
+ 2276  kill -9 %1
+ 2277  ls -ltr
+ 2278  git status
+ 2279  git commit -a -m "Added a link to the setup doc"
+ 2280  git push
+ 2281  cp -i ~/IOOS/system-test/Theme_4_Glider_Data_Visualization/Glider_Data/Glider_Data_Read.ipynb .
+ 2282  ls -ltr
+ 2283  ipython notebook &
+ 2284  conda list > /tmp/working-env.txt
+ 2285  vimdiff /tmp/broken-env.txt /tmp/working-env.txt 
+ 2286  grep -i netcdf /tmp/broken-env.txt /tmp/working-env.txt 
+ 2287  con da --help
+ 2288  conda --help
+ 2289  conda  list --help
+ 2290  git status
+ 2291  ls -ltr
+ 2292  pd
+ 2293  pushd 
+ 2294  ls -ltr
+ 2295  pushd ../../
+ 2296  ls
+ 2297  ls -ltr
+ 2298  cd Glider_Data/
+ 2299  ls -ltr
+ 2300  vi create_env
+ 2301  pd
+ 2302  pushd +2
+ 2303  ls -ltr
+ 2304  git checkout -b glider-test 
+ 2305  git status
+ 2306  git add Glider_Data_Read.ipynb 
+ 2307  git commit -m "Testing the glider-data notebook in the workshop environment"
+ 2308  git status
+ 2309  gitk
+ 2310  gitk --all
+ 2311  bg
+ 2312  git push origin glider-test
+ 2313  git remote -v
+ 2314  git status
+ 2315  pd
+ 2316  pushd +2
+ 2317  ls -altr
+ 2318  git status
+ 2319  vi create_env 
+ 2320  git fetch --all
+ 2321  git remote -a
+ 2322  git remote -v
+ 2323  git branch -a
+ 2324  git checkout origin glider-test2/housekeeping/create_env 
+ 2325  git help checkout
+ 2326  git checkout origin/glider-test2 housekeeping/create_env 
+ 2327  git help checkout
+ 2328  git checkout -b glider-test2 origin/glider-test2
+ 2329  git stash 
+ 2330  git checkout -b glider-test2 origin/glider-test2
+ 2331  cp -i ../../housekeeping/create_env /tmp/
+ 2332  git help unstash
+ 2333  git help stash
+ 2334  git status
+ 2335  git checkout glider-data
+ 2336  git stash apply
+ 2337  ls -altr
+ 2338  vi create_env 
+ 2339  git status
+ 2340  git add Glider_Data_Read.ipynb create_env 
+ 2341  git commit -m "Making a new create_environment script"
+ 2342  git push
+ 2343  gitk
+ 2344  git fetch  
+ 2345  git fetch  --all
+ 2346  git merge origin glider-data
+ 2347  vi ../../README.md 
+ 2348  git add ../../README.md
+ 2349  git commit
+ 2350  git status
+ 2351  gitk
+ 2352  ls -ltr
+ 2353  cd IOOS/
+ 2354  ls
+ 2355  cd system-test/
+ 2356  gitk
+ 2357  bg
+ 2358  ls -ltr
+ 2359  ls
+ 2360  echo $PATH
+ 2361  ls ~/anaconda/envs/
+ 2362  source activate glider_test
+ 2363  ipython notebook 
+ 2364  ipython notebook  &
+ 2365  conda list > broken-env.txt
+ 2366  conda list > /tmp/broken-env.txt
+ 2367  jobs
+ 2368  git help pull
+ 2369  date
+ 2370  firefox  http://localhost:1313/sos-guidelines
+ 2371  bg
+ 2372  cd IOOS/sos-guidelines/
+ 2373  ls -ltr
+ 2374  ls layouts/
+ 2375  ls layouts/chrome/
+ 2376  ls layouts/chrome/sidebar.html 
+ 2377  vi layouts/chrome/sidebar.html 
+ 2378  ls assets
+ 2379  vi layouts/chrome/sidebar.html 
+ 2380  git clone https://github.com/mdo/github-buttons
+ 2381  ls github-buttons/
+ 2382  less README.md 
+ 2383  cd github-buttons/
+ 2384  ls
+ 2385  less README.md 
+ 2386  cd ..
+ 2387  ls
+ 2388  ls content/
+ 2389  vi layouts/index.html 
+ 2390  vi layouts/chrome/head.html 
+ 2391  vi layouts/_default/list.html 
+ 2392  vi layouts/_default/single.html 
+ 2393  vi layouts/chrome/sidebar.html 
+ 2394  vi layouts/chrome/head.html 
+ 2395  vi layouts/index.html 
+ 2396  ls
+ 2397  rm -rf github-buttons/
+ 2398  ls content/
+ 2399  ls content/template/
+ 2400  ls content/doc/
+ 2401  ls content/doc/wsdd/
+ 2402  ls content/doc/testing/
+ 2403  vi static/css/
+ 2404  vi static/css/hyde.css 
+ 2405  vi layouts/chrome/sidebar.html 
+ 2406  vi layouts/chrome/head.html 
+ 2407  grep -ilr IOOS .
+ 2408  grep -lr IOOS .
+ 2409  grep -lr Guidelines .
+ 2410  grep -lr Docs, .
+ 2411  vi config.toml 
+ 2412  grep -lr Title .
+ 2413  vi ./layouts/chrome/head.html
+ 2414  git status
+ 2415  vi .gitignore
+ 2416  git status
+ 2417  git diff layouts/chrome/sidebar.html
+ 2418  vi layouts/chrome/sidebar.html
+ 2419  git diff layouts/chrome/sidebar.html
+ 2420  git add -A
+ 2421  msg="Rebuilding site `date`"
+ 2422  ls -ltr
+ 2423  cd ioos
+ 2424  cd IOOS/
+ 2425  ls
+ 2426  mkdir api
+ 2427  cd api
+ 2428  vi script
+ 2429  chmod +x script 
+ 2430  ./script 
+ 2431  vi script
+ 2432  ./script 
+ 2433  vi script
+ 2434  ./script 
+ 2435  fg
+ 2436  ./script 
+ 2437  vi script
+ 2438  ./script 
+ 2439  vi script
+ 2440  ./script 
+ 2441  vi script
+ 2442  ./script 
+ 2443  vi script
+ 2444  ./script 
+ 2445  vi script
+ 2446  ./script 
+ 2447  vi script
+ 2448  ./script 
+ 2449  vi script
+ 2450  ./script 
+ 2451  ./script  | less
+ 2452  vi script
+ 2453  ./script  | less
+ 2454  ./script 
+ 2455  vi script
+ 2456  curl https://api.github.com/repos/duncombe/sos-guidelines/forks_count?
+ 2457  curl https://api.github.com/repos/duncombe/sos-guidelines/parent
+ 2458  curl https://api.github.com/repos/duncombe/sos-guidelines/owner
+ 2459  curl https://api.github.com/repos/duncombe/sos-guidelines/owner?
+ 2460  curl https://api.github.com/repos/duncombe/sos-guidelines
+ 2461  curl https://api.github.com
+ 2462  curl https://api.github.com/repos/duncombe/sos-guidelines | grep commits
+ 2463  cd IOOS/
+ 2464  ls
+ 2465  git clone ssh://git@github.com/duncombe/centos-instance.git
+ 2466  cd centos-instance/
+ 2467  vi python_setup.md 
+ 2468  firefox ./python_setup.md 
+ 2469  git status
+ 2470  git commit -a -m "Update python_setup.md"
+ 2471  git push
+ 2472  cd ../sos-guidelines/
+ 2473  git status
+ 2474  git add website
+ 2475  git commit -m "including the website"
+ 2476  git status
+ 2477  git branch -a
+ 2478  git fetch --all
+ 2479  git branch -a
+ 2480  git checkout master
+ 2481  ls website/
+ 2482  rm -r website/
+ 2483  rm -rf website/
+ 2484  gitk --all &
+ 2485  git remote -v
+ 2486  git pull --rebase origin/master
+ 2487  git pull --rebase origin master
+ 2488  git checkout -b pr-master
+ 2489  git pull --no-commit https://github.com/abirger/sos-guidelines master
+ 2490  view doc/wsdd/sos_wsdd_github_toc.md
+ 2491  git rm doc/wsdd/sos_wsdd_github_toc.md
+ 2492  vi README.md 
+ 2493  less ~/.gitconfig
+ 2494  less ~/.gitconfig_extras 
+ 2495  locate -i gitvimrc
+ 2496  man vim
+ 2497  vi ~/.vimrc 
+ 2498  vi README.md 
+ 2499  vi ~/.vimrc 
+ 2500  vi README.md 
+ 2501  git add README.md 
+ 2502  git status
+ 2503  git commit 
+ 2504  git status
+ 2505  git branch -a
+ 2506  git remote -v
+ 2507  history
+ 2508  git push origin pr-master:master
+ 2509  ls -ltr
+ 2510  git branch -a
+ 2511  git checkout -b gh-pages origin/gh-pages
+ 2512  ls -ltr
+ 2513  git checkout pr-master
+ 2514  hugo
+ 2515  vi config.toml 
+ 2516  vi Website_Deployment_Workflow.md 
+ 2517  git status
+ 2518  vi .gitignore 
+ 2519  ls css
+ 2520  vi .gitignore 
+ 2521  ls css
+ 2522  git add Website_Deployment_Workflow.md
+ 2523  git commit -m "Editing Website_Deployment_Workflow.md"
+ 2524  git push origin pr-master:master
+ 2525  ls public
+ 2526  git checkout gh-pages
+ 2527  git subtree --help
+ 2528  git help subtree 
+ 2529  locate subtree | grep git
+ 2530  less /usr/local/src/git/contrib/subtree/git-subtree.txt
+ 2531  git checkout pr-master
+ 2532  ls
+ 2533  rm -rf public
+ 2534  git subtree add --prefix public origin gh-pages --squash
+ 2535  mkdir public
+ 2536  git branch -d gh-pages
+ 2537  git subtree add --prefix public origin gh-pages --squash
+ 2538  rmdir public
+ 2539  git subtree add --prefix public origin gh-pages --squash
+ 2540  git status
+ 2541  git commit -m "Remove public"
+ 2542  git status
+ 2543  git commit -a -m "Remove public"
+ 2544  git status
+ 2545  git subtree add --prefix public origin gh-pages --squash
+ 2546  git subtree pull --prefix=public
+ 2547  git subtree pull --prefix=public origin gh-pages
+ 2548  hugo
+ 2549  git status
+ 2550  git add -A
+ 2551  git status
+ 2552  msg="Rebuilding site `date`"
+ 2553  msg="rebuilding site `date`"
+ 2554  git push origin pr-master:master
+ 2555  git subtree push --prefix=public origin gh-pages
+ 2556  git branch -a
+ 2557  history | less -S +G
+ 2558  git log 
+ 2559  grep css *
+ 2560  less .gitignore 
+ 2561  ls static/
+ 2562  ls static/css/
+ 2563  git status
+ 2564  msg="Rebuilding site `date`"
+ 2565  git commit -m "$msg"
+ 2566  git push origin pr-master:master
+ 2567  git subtree push --prefix=public origin gh-pages
+ 2568  vi .gitignore 
+ 2569  ls static/css/
+ 2570  git status
+ 2571  git add .gitignore 
+ 2572  git commit -m "Updating .gitignore"
+ 2573  git push origin pr-master:master
+ 2574  hugo
+ 2575  git status
+ 2576  ls public/
+ 2577  git branch -a
+ 2578  git branch --help
+ 2579  git branch -d origin/abirger-master
+ 2580  git branch -d origin abirger-master
+ 2581  git push origin :abirger-master
+ 2582  git branch -a
+ 2583  hugo
+ 2584  ls public/
+ 2585  ls public/css/
+ 2586  git status
+ 2587  git subtree push --prefix=public origin gh-pages
+ 2588  git fetch 
+ 2589  git fetch --all
+ 2590  git checkout gh-pages
+ 2591  git checkout origin/gh-pages
+ 2592  ls
+ 2593  ls -l
+ 2594  ls -la
+ 2595  vi .gitignore
+ 2596  git status
+ 2597  git checkout -b gh-pages 
+ 2598  git status
+ 2599  git add .gitignore 
+ 2600  git commit -m "Modified gh-pages"
+ 2601  git push 
+ 2602  git checkout pr-master
+ 2603  hugo
+ 2604  git status
+ 2605  vi public/.gitignore 
+ 2606  hugo
+ 2607  git status
+ 2608  git add -A
+ 2609  msg="Rebuilding site `date`"
+ 2610  git commit -m "$msg"
+ 2611  git subtree push --prefix=public origin gh-pages
+ 2612  git subtree pull --prefix=public origin gh-pages
+ 2613  git subtree push --prefix=public origin gh-pages
+ 2614  hugo
+ 2615  git status
+ 2616  git branch -d gh-pages
+ 2617  git subtree push --prefix=public origin gh-pages
+ 2618  git subtree pull --prefix=public origin gh-pages
+ 2619  git push origin pr-master:master
+ 2620  git subtree pull --prefix=public origin gh-pages
+ 2621  git subtree push --prefix=public origin gh-pages
+ 2622  hugo
+ 2623  git status
+ 2624  less /usr/local/src/git/contrib/subtree/git-subtree.txt
+ 2625  git checkout -b gh-pages gh-pages
+ 2626  git checkout -b gh-pages origin/gh-pages
+ 2627  git pull origin/gh-pages
+ 2628  git pull origin gh-pages
+ 2629  git checkout pr-master
+ 2630  hugo
+ 2631  git status
+ 2632  git push origin pr-master:master
+ 2633  git subtree push --prefix=public origin gh-pages
+ 2634  git push --help 
+ 2635  git checkout gh-pages
+ 2636  git staus
+ 2637  git status
+ 2638  git lg
+ 2639  vi .gitignore 
+ 2640  git checkout pr-master
+ 2641  ls -altr
+ 2642  rm -rf public/
+ 2643  git subtree pull --prefix=public origin gh-pages
+ 2644  git subtree add --prefix public origin gh-pages
+ 2645  git status
+ 2646  git commit -a -m "Remove public"
+ 2647  git subtree add --prefix public origin gh-pages
+ 2648  ls public/
+ 2649  hugo
+ 2650  msg="Rebuilding site `date`"
+ 2651  git status
+ 2652  git commit -a -m "$msg"
+ 2653  git add -A
+ 2654  git commit -a -m "$msg"
+ 2655  git subtree push --prefix=public origin gh-pages
+ 2656  ls -ltr
+ 2657  cd content/
+ 2658  ls -ltr
+ 2659  cd doc/
+ 2660  ls
+ 2661  cd ../template/
+ 2662  ls
+ 2663  cd ..
+ 2664  ls
+ 2665  cd ..
+ 2666  ls
+ 2667  cd layouts/
+ 2668  ls
+ 2669  vi index.html 
+ 2670  vi "chrome/sidebar.html"
+ 2671  hugo --help
+ 2672  hugo help
+ 2673  hugo server --watch 
+ 2674  cd ..
+ 2675  hugo server --watch 
+ 2676  hugo
+ 2677  git commit -m "$msg"
+ 2678  git status
+ 2679  git push origin pr-master:master
+ 2680  git subtree push --prefix=public origin gh-pages
+ 2681  cd ../system-test/
+ 2682  ls
+ 2683  git branch -a
+ 2684  git remote -v
+ 2685  git fetch --all
+ 2686  gitk --all &
+ 2687  git checkout origin/master
+ 2688  git checkout master
+ 2689  git pull --rebase upstream master
+ 2690  git push origin master
+ 2691  git branch -a
+ 2692  git branch -d messedup-master
+ 2693  git branch -D messedup-master
+ 2694  git push origin :messedup-master
+ 2695  git branch -d upstream
+ 2696  git branch -d tidying-up
+ 2697  git push origin :tidying-up
+ 2698  pd
+ 2699  cd ../sos-guidelines/
+ 2700  git status
+ 2701  git fetch --all
+ 2702  git remote -v
+ 2703  git branch -a
+ 2704  gitk --all &
+ 2705  git branch -d birger-master
+ 2706  git branch -d mymaster
+ 2707  git branch -D mymaster
+ 2708  git branch -D trash
+ 2709  git branch -a
+ 2710  git push duncombe :alex-master
+ 2711  git branch -a
+ 2712  git fetch --all
+ 2713  git branch -a
+ 2714  git checkout  master
+ 2715  git pull --rebase origin/master
+ 2716  git pull --rebase origin master
+ 2717  git push duncombe master
+ 2718  git status
+ 2719  git branch -a
+ 2720  git branch -d pr-master
+ 2721  cd ../system-test/
+ 2722  ls
+ 2723  git remote -v
+ 2724  git status
+ 2725  git branch -a
+ 2726  git fetch --all
+ 2727  gitk --all &
+ 2728  git checkout glider-data
+ 2729  git merge origin/glider-data
+ 2730  git status
+ 2731  git merge --no-commit glider-test2
+ 2732  git status
+ 2733  git diff
+ 2734  git git diff 982dffe72b95a5ba12545588a845de982c109f8b
+ 2735  git commit 
+ 2736  git push 
+ 2737  git branch -a
+ 2738  git branch -d glider-test2
+ 2739  git push origin :glider-test2
+ 2740  pushd ../glossary/
+ 2741  git status
+ 2742  git pull
+ 2743  vi README.md 
+ 2744  ./update.sh 
+ 2745  git push
+ 2746  vi README.md 
+ 2747  ./update.sh 
+ 2748  git push
+ 2749  vi README.md 
+ 2750  ./update.sh 
+ 2751  git push
+ 2752  vi README.md 
+ 2753  vi ./update.sh 
+ 2754  vi ./stats.sh 
+ 2755  vi README.md 
+ 2756  ./stats.sh 
+ 2757  vi README.md 
+ 2758  ./stats.sh 
+ 2759  vi README.md 
+ 2760  ./update.sh 
+ 2761  git push
+ 2762  vi README.md 
+ 2763  ./update.sh 
+ 2764  git push
+ 2765  vi README.md 
+ 2766  ./update.sh 
+ 2767  vi README.md 
+ 2768  ./update.sh 
+ 2769  git push
+ 2770  vi README.md 
+ 2771  ./update.sh 
+ 2772  vi README.md 
+ 2773  git push
+ 2774  vi README.md 
+ 2775  ./update.sh 
+ 2776  git push
+ 2777  vi README.md 
+ 2778  ./update.sh 
+ 2779  git push
+ 2780  cd IOOS/
+ 2781  ls
+ 2782  git clone ssh://git@github.com/duncombe/netcdf-guidelines.git
+ 2783  cd netcdf-guidelines/
+ 2784  vi README.md 
+ 2785  firefox &
+ 2786  vi README.md 
+ 2787  git status
+ 2788  git commit -a -m "Updating documentation"
+ 2789  git push
+ 2790  git status
+ 2791  ruby
+ 2792  ruby --version
+ 2793  perl --version
+ 2794  cd IOOS/
+ 2795  cd glossary/
+ 2796  ls -ltr
+ 2797  pushd ~/PROGS/
+ 2798  ls
+ 2799  ls ../bin
+ 2800  mkdir ~/bin
+ 2801  cd ../dotfiles/
+ 2802  git status
+ 2803  git fetch --all
+ 2804  git status
+ 2805  git diff 
+ 2806  git commit -a -m "Update vimrc"
+ 2807  git push
+ 2808  ls -altr
+ 2809  vi startup/
+ 2810  vi duncombe/:q
+ 2811  pushd ~/bin/
+ 2812  echo $PATH
+ 2813  curl http://daringfireball.net/projects/downloads/Markdown_1.0.1.zip
+ 2814  PuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTY:q
+ 2815  man curl
+ 2816  wget http://daringfireball.net/projects/downloads/Markdown_1.0.1.zip
+ 2817  ls -ltr
+ 2818  unzip -l Markdown_1.0.1.zip 
+ 2819  unzip  Markdown_1.0.1.zip 
+ 2820  mv -i Markdown_1.0.1* ~/software/
+ 2821  cp -i ~/software/Markdown_1.0.1/Markdown.pl ~/bin
+ 2822  less ~/software/Markdown_1.0.1/Markdown\ Readme.text 
+ 2823  ls -ltr
+ 2824  pwd
+ 2825  view Markdown.pl 
+ 2826  ./Markdown.pl ~/IOOS/glossary/README.md 
+ 2827  ./Markdown.pl ~/IOOS/glossary/README.md  | less
+ 2828  ./Markdown.pl --html4tags ~/IOOS/glossary/README.md  | less
+ 2829  pd
+ 2830  pushd +2
+ 2831  ./Markdown.pl --html4tags ~/IOOS/glossary/README.md  > index.html
+ 2832  Markdown.pl --html4tags ~/IOOS/glossary/README.md  > index.html
+ 2833  firfox &
+ 2834  firefox &
+ 2835  git status
+ 2836  git pull 
+ 2837  Markdown.pl --html4tags ~/IOOS/glossary/README.md  > index.html
+ 2838  git status
+ 2839  mkdir content
+ 2840  mv index.html content/
+ 2841  git add -A
+ 2842  git commit -m "Creating content for website" 
+ 2843  git push
+ 2844  git remote -a
+ 2845  git remote -v
+ 2846  git branch -a
+ 2847  git checkout -b gh-pages gh-pages
+ 2848  git checkout -b gh-pages origin/gh-pages
+ 2849  ls -altr
+ 2850  less index.html 
+ 2851  ls -ltr
+ 2852  git checkout master index.html
+ 2853  git checkout master content/index.html
+ 2854  ls -ltr
+ 2855  mv content/index.html .
+ 2856  rmdir content/
+ 2857  git status
+ 2858  git reset HEAD content/index.html
+ 2859  git status
+ 2860  git commit -m "Creating content for website" 
+ 2861  git commit -a -m "Creating content for website" 
+ 2862  git push
+ 2863  gitk --all &
+ 2864  git checkout  master
+ 2865  hugo new site `pwd`
+ 2866  ls -ltr
+ 2867  cd ..
+ 2868  mv -i glossary glossy
+ 2869  pwd
+ 2870  hugo new site `pwd`/glossary
+ 2871  cd glossary/
+ 2872  ls -altr
+ 2873  rsync -nauvi ../glossy/ .
+ 2874  rsync -nauvi ../glossy/ . | less
+ 2875  ls content/
+ 2876  rsync -nauvi ../glossy/ . | less
+ 2877  rsync -auvi ../glossy/ . 
+ 2878  ls -altr
+ 2879  git status
+ 2880  ls -altr
+ 2881  ls layouts/
+ 2882  hugo new about.md
+ 2883  git status
+ 2884  find . -isempty -type d -print
+ 2885  find . -type d -print
+ 2886  cd IOOS/
+ 2887  ls 
+ 2888  git clone ssh://git@github.com/robragsdale/vocabularies.git
+ 2889  cd vocabularies/
+ 2890  git remote add upstream ssh://git@github.com/ioos/vocabularies.git
+ 2891  git fetch --all
+ 2892  git status
+ 2893  git remote -v
+ 2894  git checkout upstream/master
+ 2895  git checkout -b pr-master upstream/master
+ 2896  ls -ltr
+ 2897  git status
+ 2898  gitk
+ 2899  gitk --all
+ 2900  git merge origin master
+ 2901  vi README.md 
+ 2902  git merge --help
+ 2903  git merge --abort
+ 2904  git merge --help
+ 2905  which tempfile
+ 2906  mktemp
+ 2907  cd IOOS/sos-guidelines/
+ 2908  ls
+ 2909  ls -altr
+ 2910  ls layouts/
+ 2911  ls layouts/_default/
+ 2912  ls layouts/index.html 
+ 2913  view layouts/index.html 
+ 2914  ls layouts/
+ 2915  ls layouts/chrome/
+ 2916  ls archetypes/
+ 2917  less archetypes/default.md 
+ 2918  ls doc/
+ 2919  ls template/
+ 2920  ls static/
+ 2921  ls layouts/
+ 2922  rsync -nauvi  layouts ../glossary/
+ 2923  rsync -auvi  layouts ../glossary/
+ 2924  vi config.toml 
+ 2925  ls
+ 2926  ls static/
+ 2927  rsync -nauvi  static ../glossary/
+ 2928  rsync -auvi  static ../glossary/
+ 2929  date
+ 2930  ls -altr
+ 2931  ls archetypes/
+ 2932  view archetypes/default.md 
+ 2933  rsync -auvi  static ../glossary/
+ 2934  ls static/
+ 2935  ls static/css/
+ 2936  ls static/images/
+ 2937  cd IOOS/vocabularies/
+ 2938  gitk --all &
+ 2939  git merge --help
+ 2940  git merge -s ignore-space-change  origin master
+ 2941  git merge --help
+ 2942  git merge -Xignore-space-change  origin master
+ 2943  vi README.md 
+ 2944  git merge --abort
+ 2945  cd ../gloss
+ 2946  ls -altr
+ 2947  cd ..
+ 2948  ls -altr glossy/
+ 2949  ls glossary/
+ 2950  rm -rf glossy/
+ 2951  cd glossary/
+ 2952  ls -ltr
+ 2953  ls content/
+ 2954  ls layouts/
+ 2955  hhugo new about.md
+ 2956  hugo new about.md
+ 2957  ls -altr
+ 2958  git status
+ 2959  view content/about.md 
+ 2960  vi content/about.md
+ 2961  git clone --recursive https://github.com/spf13/hugoThemes themes
+ 2962  hugo server --theme=hyde --buildDrafts 
+ 2963  hugo server --watch --theme=hyde --buildDrafts 
+ 2964  hugo server --watch --buildDrafts 
+ 2965  hugo server --watch --theme=hyde --buildDrafts 
+ 2966  git clone --recursive https://github.com/spf13/hugoThemes themes
+ 2967  vi config.toml 
+ 2968  git clone --recursive https://github.com/spf13/hugoThemes/hyde themes/hyde
+ 2969  git clone --recursive https://github.com/spf13/hugoThemes/hyde.git themes/hyde
+ 2970  ls themes/
+ 2971  git clone --recursive https://github.com/spf13/hyde.git themes/hyde
+ 2972  ls -altr
+ 2973  ls -altr themes/
+ 2974  hugo server --watch --theme=hyde --buildDrafts 
+ 2975  git clone --recursive https://github.com/spf13/hyde.git themes/hyde
+ 2976  firefox &
+ 2977  cd IOOS/glossary/
+ 2978  ls -altr
+ 2979  cd content/
+ 2980  ls -ltr
+ 2981  less index.html 
+ 2982  ls 
+ 2983  ln -s ../README.md index.md
+ 2984  ls
+ 2985  ls -ltr
+ 2986  ls ../public/
+ 2987  mv -i index.html rub1.html
+ 2988  ls -ltr
+ 2989  ls -altr
+ 2990  rm rub1.html 
+ 2991  vi index.md 
+ 2992  ls -altr
+ 2993  rm index.md
+ 2994  mv -i ../README.md  index.md
+ 2995  ln -s content/index.html ../README.md
+ 2996  ls -ltr
+ 2997  git status
+ 2998  cd ..
+ 2999  ./update.sh 
+ 3000  ls -altr
+ 3001  ln -sf content/index.md README.md 
+ 3002  ls -ltr
+ 3003  ./update.sh 
+ 3004  git lg
+ 3005  git push
+ 3006  pushd /tmp/
+ 3007  ls
+ 3008  git clone ssh://git@github.com/duncombe/glossary.git
+ 3009  ls -altr glossary/
+ 3010  ls -altr glossary/content/
+ 3011  ls -altIr glossary/content/
+ 3012  ls -altir glossary/content/
+ 3013  ls -altir glossary/content/ glossary/
+ 3014  ls -altr
+ 3015  pushd
+ 3016  ls -altr
+ 3017  ls -ltr content/
+ 3018  rm README.md 
+ 3019  ln -sf content/index.md README.md 
+ 3020  ls -ltr
+ 3021  git status
+ 3022  git add README.md 
+ 3023  git commit -m 'I want a symlink!'
+ 3024  ls -ltr
+ 3025  git push
+ 3026  pushd
+ 3027  cd glossary/
+ 3028  ls -altr
+ 3029  git pull
+ 3030  ls -altr
+ 3031  git pull
+ 3032  pushd
+ 3033  git pull
+ 3034  date
+ 3035  vi update.sh 
+ 3036  vi stats.sh 
+ 3037  git status
+ 3038  ./stats.sh 
+ 3039  ls -altr
+ 3040  less README.md 
+ 3041  ./update.sh 
+ 3042  git push
+ 3043  vi stats.sh 
+ 3044  ls -ltr
+ 3045  cd layouts/
+ 3046  ls -altr
+ 3047  ls ../stat
+ 3048  ls ../static/
+ 3049  ls ../archetypes/
+ 3050  ls public
+ 3051  ls ../public
+ 3052  ls ../public/css/
+ 3053  cd ../archetypes/
+ 3054  ls
+ 3055  cd ..
+ 3056  ls
+ 3057  ls -altr
+ 3058  ls layouts/
+ 3059  ls themes/hyde
+ 3060  ls themes/hyde/archetypes/
+ 3061  ls themes/hyde/layouts/
+ 3062  ls themes/hyde/layouts/_default/
+ 3063  ls -altr
+ 3064  ls -altr public/
+ 3065  ls -altr public/about/
+ 3066  ls -altr
+ 3067  vi README.md 
+ 3068  ls  layouts/
+ 3069  vi layouts/_default/
+ 3070  vi layouts/index.html 
+ 3071  vi layouts/_default/list.html 
+ 3072  vi layouts/_default/single.html 
+ 3073  vi layouts/chrome/
+ 3074  vi layouts/chrome/head.html 
+ 3075  vi layouts/chrome/sidebar.html 
+ 3076  grep new *
+ 3077  vi config.toml 
+ 3078  touch README.md 
+ 3079  touch content/index.md 
+ 3080  vi config.toml 
+ 3081  ls -altr
+ 3082  vi layouts/index.html 
+ 3083  ls -ltr
+ 3084  vi layouts/index.html 
+ 3085  vi config.toml 
+ 3086  ls -altr
+ 3087  mv -i layouts tr
+ 3088  touch content/index.md 
+ 3089  mv -i tr layouts
+ 3090  ls -tlr
+ 3091  vi layouts/index.html 
+ 3092  ls layouts/
+ 3093  vi layouts/index.html 
+ 3094  vi config.toml 
+ 3095  grep -ilr sos-guide .
+ 3096  vi content/about.md 
+ 3097  vi config.toml 
+ 3098  vi content/*
+ 3099  vi layouts/_default/*
+ 3100  ls -altr
+ 3101  vi config.toml 
+ 3102  vi layouts/index.html 
+ 3103  vi config.toml 
+ 3104  touch content/index.md 
+ 3105  vi config.toml 
+ 3106  touch content/index.md 
+ 3107  vi layouts/index.html 
+ 3108  ls -altr
+ 3109  git status
+ 3110  vi config.toml 
+ 3111  vi layouts/index.html 
+ 3112  ls stat
+ 3113  ls static/
+ 3114  git rm -r themes/
+ 3115  git rm -rf themes/
+ 3116  rm -rf themes/
+ 3117  git rm -rf themes/
+ 3118  ls -altr public/
+ 3119  ls -ltr
+ 3120  ls -ltra
+ 3121  ls -ltra stat
+ 3122  ls -ltra static/
+ 3123  ls -ltra static/images/
+ 3124  ls
+ 3125  grep blue *
+ 3126  grep -ir blue *
+ 3127  ls -altr themes/
+ 3128  ls -altr themes/hyde
+ 3129  cd ..
+ 3130  cd glossary/
+ 3131  ls -ltra
+ 3132  ls themes/
+ 3133  rm -rf themes/
+ 3134  ls -ltr
+ 3135  ls -ltr static/
+ 3136  ls themes/hyde/
+ 3137  view layouts/index.html 
+ 3138  grep -ilr blue .
+ 3139  vi ./layouts/chrome/sidebar.html
+ 3140  ls 
+ 3141  ls static/images/
+ 3142  vi ./layouts/chrome/sidebar.html
+ 3143  ls public/
+ 3144  ls public/images/
+ 3145  vi ./layouts/chrome/sidebar.html
+ 3146  vi config.toml 
+ 3147  git status
+ 3148  git add -A
+ 3149  git status
+ 3150  ls themes/hyde/
+ 3151  git commit -m "A new website"
+ 3152  git status
+ 3153  ./update.sh 
+ 3154  git push
+ 3155  git status
+ 3156  git branch -a
+ 3157  git checkout gh-pages
+ 3158  git status
+ 3159  git rm --cached $(git ls-files)
+ 3160  git status
+ 3161  git pull 
+ 3162  git status
+ 3163  ls -altr
+ 3164  git push origin gh-pages
+ 3165  git checkout master
+ 3166  git add -A
+ 3167  git rm --cached $(git ls-files)
+ 3168  git rm -f --cached $(git ls-files)
+ 3169  git pull 
+ 3170  git status
+ 3171  git push origin gh-pages
+ 3172  git checkout master
+ 3173  rm -rf *
+ 3174  git checkout master
+ 3175  ls -altr
+ 3176  git status
+ 3177  git commit -m "clean out"
+ 3178  git status
+ 3179  git push origin gh-pages
+ 3180  git checkout master
+ 3181  rm -rf public/
+ 3182  git subtree add --prefix public origin gh-pages 
+ 3183  git status
+ 3184  git rm -r public
+ 3185  git commit -m "clean out"
+ 3186  git subtree add --prefix public origin gh-pages 
+ 3187  git subtree add --prefix public origin gh-pages --squash
+ 3188  mkdir public
+ 3189  git subtree add --prefix public origin gh-pages --squash
+ 3190  ls -ltr
+ 3191  git subtree pull --prefix public origin gh-pages 
+ 3192  hugo -t hyde
+ 3193  ls themes/hyde/
+ 3194  hugo -t hyde
+ 3195  git add -A
+ 3196  git status
+ 3197  git commit -m "Updating website"
+ 3198  git push origin master
+ 3199  git subtree push --prefix=public origin gh-pages
+ 3200  cd IOOS/glossary/
+ 3201  ls -ltr
+ 3202  hugo server --watch --theme=hyde --buildDrafts 
+ 3203  git help merge
+ 3204  cd IOOS/glossary/
+ 3205  ls
+ 3206  ls -ltr
+ 3207  git status
+ 3208  git add website-install.md 
+ 3209  git status
+ 3210  ./update.sh 
+ 3211  git status
+ 3212  hugo
+ 3213  git status
+ 3214  git add -A
+ 3215  msg="Update website `date`"
+ 3216  git commit -m "${msg}"
+ 3217  git remote -v
+ 3218  git push origin master
+ 3219  git subtree push --prefix=public origin gh-pages
+ 3220  ls -lt
+ 3221  ls -ltr
+ 3222  firefox &
+ 3223  vi layouts/index.html 
+ 3224  vi layouts/_default/
+ 3225  vi layouts/_default/single.html 
+ 3226  vi layouts/chrome/head.html 
+ 3227  vi layouts/chrome/sidebar.html 
+ 3228  ls public/
+ 3229  ls -ltr
+ 3230  vi layouts/index.html 
+ 3231  rm -rf public 
+ 3232  mkdir public
+ 3233  ls -altr
+ 3234  ls -altr public/
+ 3235  vi layouts/chrome/sidebar.html 
+ 3236  hugo
+ 3237  git add -A -v
+ 3238  msg="Update website `date`"
+ 3239  git commit -m "${msg}"
+ 3240  git push
+ 3241  git subtree push --prefix=public origin gh-pages
+ 3242  cd ../ioos.github.io/
+ 3243  ls -ltr
+ 3244  mv -i README.md /tmp/
+ 3245  ls -ltr
+ 3246  rm -rf *
+ 3247  hugo new site .
+ 3248  hugo new site fiend
+ 3249  ls -altr
+ 3250  ls -altr fiend/
+ 3251  less  fiend/*
+ 3252  mv -i fiend/* .
+ 3253  rmdir fiend/
+ 3254  vi config.toml 
+ 3255  contentdir = "content"
+ 3256  layoutdir = "layouts"
+ 3257  publishdir = "public"
+ 3258  Title = "ocean data acronyms"
+ 3259  [params]
+ 3260  vi config.toml 
+ 3261  mv -i /tmp/README.md .
+ 3262  git status
+ 3263  ls -ltr
+ 3264  for f in *; do [ -d $f ] && touch $f/.gitkeep ; done
+ 3265  git status
+ 3266  ls -altr
+ 3267  git checkout -b new-website
+ 3268  git status
+ 3269  git add -A -v
+ 3270  git status
+ 3271  git commit -m "Transitioning to a Hugo website"
+ 3272  ls -altr
+ 3273  git push 
+ 3274  cd 
+ 3275  cd IOOS/system-test/
+ 3276  git status
+ 3277  git fetch --all
+ 3278  git remote -v
+ 3279  git branch -a
+ 3280  git checkout master
+ 3281  git pull --rebase upstream master
+ 3282  git lg
+ 3283  git push origin master
+ 3284  cd ../netcdf-guidelines/
+ 3285  git status
+ 3286  git checkout  -b compressed
+ 3287  gitk --all &
+ 3288  git help rebase
+ 3289  git remote -v
+ 3290  git help rebase
+ 3291  git rebase master
+ 3292  git help rebase
+ 3293  git status
+ 3294  git branch -a
+ 3295  git fetch --all
+ 3296  git branch -a
+ 3297  git checkout -b master origin/master 
+ 3298  git branch -a
+ 3299  git checkout compressed
+ 3300  git branch -a
+ 3301  git rebase master
+ 3302  git lg
+ 3303  git branch -a
+ 3304  git help rebase
+ 3305  git status
+ 3306  git rebase --squash master 
+ 3307  git rebase -i master 
+ 3308  git status
+ 3309  git push origin compressed
+ 3310  git merge --no-commit readme-update
+ 3311  git commit -m "Merge read-update"
+ 3312  git rebase origin/compressed
+ 3313  git rebase --abort
+ 3314  git status
+ 3315  git lg
+ 3316  git reset --hard HEAD^
+ 3317  cd ../registry/
+ 3318  git fetch --all
+ 3319  git status
+ 3320  git remote -a
+ 3321  git remote -v
+ 3322  git branch -a
+ 3323  gitk --all &
+ 3324  git status
+ 3325  git pull origin/master
+ 3326  git diff
+ 3327  git checkout -b merge-mess
+ 3328  git add README.md
+ 3329  git status
+ 3330  git merge --abort
+ 3331  git status
+ 3332  git pull origin/master
+ 3333  git pull origin master
+ 3334  git pull upstream master
+ 3335  git status
+ 3336  git lg
+ 3337  git status
+ 3338  git branch -a
+ 3339  git push origin master
+ 3340  cd ../glossary/
+ 3341  ls -ltr
+ 3342  git status
+ 3343  git fetch --all
+ 3344  git status
+ 3345  git branch -a
+ 3346  git pull origin master
+ 3347  gitk --all &
+ 3348  ls -altr
+ 3349  git mv getting_hugo_to_work.txt website-install.md
+ 3350  ls -ltr
+ 3351  vi website-install.md 
+ 3352  git diff
+ 3353  vi website-install.md 
+ 3354  git status
+ 3355  ls -altr
+ 3356  vi website-install.md 
+ 3357  ./update.sh 
+ 3358  git push 
+ 3359  ls content/
+ 3360  ls -ltr content/
+ 3361  ls public/
+ 3362  ls content
+ 3363  ls 
+ 3364  ls public/
+ 3365  ls public/images/
+ 3366  vi content/about.md 
+ 3367  vi content/index.md 
+ 3368  ls -altr
+ 3369  rm content/about.md 
+ 3370  mv -i website-install.md content/about.md
+ 3371  ln -s content/about.md website-install.md
+ 3372  ls -ltr
+ 3373  ls
+ 3374  ls static
+ 3375  mv -i content/about.md static/website-install.md
+ 3376  ls -ltr
+ 3377  ln -s static/website-install.md website-install.md
+ 3378  ln -sf static/website-install.md website-install.md
+ 3379  ls 
+ 3380  ls -ltr
+ 3381  ls static/
+ 3382  ls -altr
+ 3383  ls -altr public/
+ 3384  ls -altr public/about/
+ 3385  ls static/
+ 3386  rm -r public/about/
+ 3387  mv -i static/website-install.md content/
+ 3388  ln -sf content/website-install.md website-install.md
+ 3389  vi content/about.md
+ 3390  ./update.sh 
+ 3391  git push
+ 3392  hugo
+ 3393  git add -A -v
+ 3394  msg="Rebuilding site `date`"
+ 3395  git commit -m "$msg"
+ 3396  git subtree push --prefix=public origin gh-pages
+ 3397  cd ../
+ 3398  ls -ltr
+ 3399  git clone ssh://git@github.com/ioos/ioos.github.io.git
+ 3400  cd ioos.github.io/
+ 3401  ls
+ 3402  ls -altr
+ 3403  gitk --all 
+ 3404  bg
+ 3405  vi README.md 
+ 3406  git status
+ 3407  git branch -a
+ 3408  git fetch --all
+ 3409  git pull
+ 3410  git add README.md 
+ 3411  git commit -m "Updating README.md"
+ 3412  git push
+ 3413  ls -altr
+ 3414  git status
+ 3415  pd
+ 3416  pushd ../glossary/
+ 3417  ls -ltr
+ 3418  view config.toml 
+ 3419  cd IOOS/glossary/
+ 3420  ls -ltr
+ 3421  vi README.md 
+ 3422  pushd ../ioos.github.io/
+ 3423  ls -ltr
+ 3424  vi README.md 
+ 3425  mv -i README.md content/index.md
+ 3426  ls layouts/
+ 3427  ls themes/
+ 3428  ls themes/hyde/
+ 3429  ls layouts/
+ 3430  ls -ltr
+ 3431  ls themes/
+ 3432  ls themes/hyde/
+ 3433  ls -altr
+ 3434  ln -s content/index.md README.md
+ 3435  ls -ltr
+ 3436  vi README.md 
+ 3437  git status
+ 3438  git add -A -v
+ 3439  git commit -m "Updating the website `date`"
+ 3440  git status
+ 3441  git push
+ 3442  git log
+ 3443  ls -ltr
+ 3444  git branch -a
+ 3445  git checkout -b gh-pages origin/gh-pages
+ 3446  ls -altr
+ 3447  git status
+ 3448  git rm --cached $(git ls-files)
+ 3449  git status
+ 3450  git add README.md
+ 3451  less README.md 
+ 3452  git status
+ 3453  git commit -m "Preparing the new gh-pages"
+ 3454  git status
+ 3455  git push
+ 3456  git checkout new-website
+ 3457  ls -altr
+ 3458  git status
+ 3459  git help ls-files
+ 3460  git ls-files -o
+ 3461  rm $(git ls-files -o)
+ 3462  ls -altr
+ 3463  git ls-files -o
+ 3464  git status
+ 3465  ls -altr
+ 3466  find . -type d -size 0 -print
+ 3467  find . -type d -empty  -print
+ 3468  find . -type d -empty  -print | grep -v .git
+ 3469  find . -type d -empty  -print | grep -v .git | xargs rmdir 
+ 3470  ls -altr
+ 3471  git status
+ 3472  ls public/
+ 3473  git subtree split -P public --onto=a46c96d 
+ 3474  git status
+ 3475  ls public/
+ 3476  rm -r public/*
+ 3477  hugo
+ 3478  git subtree push -P public origin gh-pages
+ 3479  git status
+ 3480  git status themes/
+ 3481  git status themes
+ 3482  git add -A -v
+ 3483  git commit -m "Updating the website `date`"
+ 3484  git checkout gh-pages
+ 3485  git pull origin gh-pages
+ 3486  git checkout new-website
+ 3487  git status
+ 3488  git subtree push -P public origin gh-pages
+ 3489  git checkout origin  gh-pages
+ 3490  git checkout origin/gh-pages
+ 3491  git branch -d gh-pages
+ 3492  git checkout -b gh-pages
+ 3493  git pull origin  gh-pages
+ 3494  git checkout new-website
+ 3495  git lg | grep subtree
+ 3496  git log | grep subtree
+ 3497  git log 
+ 3498  git branch -d gh-pages
+ 3499  git branch -D gh-pages
+ 3500  git subtree split -P public --onto=a46c96d -b gh-pages
+ 3501  git subtree push -P public origin gh-pages
+ 3502  git subtree pull -P public origin gh-pages
+ 3503  ls -altr
+ 3504  git rm public/index.html 
+ 3505  git status
+ 3506  git commit -m "Trouble with the gh-pages subtree"
+ 3507  git status
+ 3508  git subtree pull -P public origin gh-pages
+ 3509  hugo
+ 3510  git add -A -v
+ 3511  git commit -m "Updating the website `date`"
+ 3512  git push
+ 3513  git subtree push -P public origin gh-pages
+ 3514  uptime
+ 3515  cd IOOS/glossary/
+ 3516  ls -ltr
+ 3517  locate subtree.txt
+ 3518  less /usr/local/src/git/contrib/subtree/git-subtree.txt
+ 3519  git lg
+ 3520  less /usr/local/src/git/contrib/subtree/git-subtree.txt
+ 3521  cd IOOS/
+ 3522  ls
+ 3523  ls -ltr
+ 3524  cd ioos.github.io/
+ 3525  ls
+ 3526  vi README.md 
+ 3527  git clone --recursive https://github.com/spf13/hyde.git themes/hyde
+ 3528  cat config.toml
+ 3529  lsd 
+ 3530  ls 
+ 3531  ls -1
+ 3532  echo 'baseurl = "http://ioos.github.io"' > /tmp/snot
+ 3533  echo 'languageCode = "en-us"' >> /tmp/snot 
+ 3534  cat /tmp/snot 
+ 3535  cat config.toml 
+ 3536  ls -altr
+ 3537  hugo server --theme=hyde --buildDrafts
+ 3538  firefox &
+ 3539  fg
+ 3540  hugo server --theme=hyde --buildDrafts --watch &
+ 3541  vi config.toml 
+ 3542  jobs
+ 3543  kill -2 %3
+ 3544  hugo server --theme=hyde --buildDrafts --watch &
+ 3545  jobs
+ 3546  kill -2 %3
+ 3547  hugo server --buildDrafts --watch &
+ 3548  ls public/
+ 3549  rm -r public/*
+ 3550  jobs
+ 3551  kill -2 %3
+ 3552  hugo server --buildDrafts --watch &
+ 3553  ls public/
+ 3554  ls
+ 3555  rmdir layouts
+ 3556  ls layouts/
+ 3557  ls -l layouts/
+ 3558  ls -la layouts/
+ 3559  rsync -nauvi  themes/hyde/layouts .
+ 3560  rsync -auvi  themes/hyde/layouts .
+ 3561  ls s -ltr
+ 3562  ls -ltr
+ 3563  rsync -nauvi themes/hyde/{archetypes,content,layouts,static} .
+ 3564  rsync -nauvi themes/hyde/{archetypes,layouts,static} .
+ 3565  rsync -auvi themes/hyde/{archetypes,layouts,static} .
+ 3566  git lg
+ 3567  git lg gh-pages
+ 3568  vi
+ 3569  less .gitconfig_extras 
+ 3570  less .gitconfig
+ 3571  ls -altr
+ 3572  ls -altr .vimrc 
+ 3573  view .vimrc
+ 3574  cd IOOS/
+ 3575  ls
+ 3576  ls -ltr
+ 3577  cd glossary/
+ 3578  ls -ltr
+ 3579  git fetch --all
+ 3580  git status
+ 3581  git pull 
+ 3582  ls -ltr
+ 3583  view website-install.md 
+ 3584  vi README.md 
+ 3585  vi 
+ 3586  find . -iname ".*.swp" -print
+ 3587  vi ./IOOS/sos-guidelines/public/css/hyde.css
+ 3588  cd IOOS/sos-guidelines/
+ 3589  ls -altr
+ 3590  git status
+ 3591  git branch -a
+ 3592  ls -ltr
+ 3593  vi content/.gitignore
+ 3594  vi .gitignore 
+ 3595  hugo
+ 3596  git add -A -v
+ 3597  ls public/
+ 3598  ls -ltr public/
+ 3599  git commit -m "Updating website"
+ 3600  git remote -a
+ 3601  git remote -v
+ 3602  git branch -a
+ 3603  git fetch --all
+ 3604  git status
+ 3605  git push
+ 3606  git subtree push -P public origin gh-pages
+ 3607  cd ../glossary/
+ 3608  ls -ltr
+ 3609  git status
+ 3610  git diff
+ 3611  ./generate.sh 
+ 3612  ./update.sh 
+ 3613  git pull 
+ 3614  ls -ltr
+ 3615  view update.sh 
+ 3616  vi config.toml 
+ 3617  git status
+ 3618  git branch -a
+ 3619  ls -altr
+ 3620  view README.md 
+ 3621  hugo
+ 3622  view public/index.html 
+ 3623  vi .gitignore 
+ 3624  vi content/.gitkeep 
+ 3625  git branch -a
+ 3626  ls -altr content/
+ 3627  vi ./generate.sh 
+ 3628  ./generate.sh 
+ 3629  view public/index.html 
+ 3630  vi public/index.xml 
+ 3631  ls -ltr
+ 3632  git lg
+ 3633  vi config.toml 
+ 3634  ls -altr
+ 3635  rm public/*
+ 3636  rm -r public/*
+ 3637  hugo
+ 3638  ls -latr public/
+ 3639  git status
+ 3640  git branch -a
+ 3641  git remote -v
+ 3642  git pull origin master
+ 3643  vi update.sh 
+ 3644  vi generate.sh 
+ 3645  ./generate.sh 
+ 3646  view content/index.md 
+ 3647  view public/index.html 
+ 3648  view public/index.xml
+ 3649  hugo --version
+ 3650  hugo version
+ 3651  which hugo
+ 3652  ls ~/hugo
+ 3653  ls -altr ~/hugo
+ 3654  ls -altr ~/hugo/
+ 3655  firefox
+ 3656  ls -ltr
+ 3657  cd IOOS/
+ 3658  ls -ltr
+ 3659  echo $PATH
+ 3660  cd IOOS/
+ 3661  ls -ltr
+ 3662  cd glossary/
+ 3663  ls -altr
+ 3664  git mystat
+ 3665  pushd ~/dotfiles/
+ 3666  git status
+ 3667  git pull
+ 3668  vi duncombe/gitconfig
+ 3669  vi ~/.gitconfig_extras 
+ 3670  ls -ltr duncombe/
+ 3671  vi duncombe/gitconfig_extras 
+ 3672  ls ~/PROGS/
+ 3673  pushd ~/PROGS/
+ 3674  git status
+ 3675  git pull
+ 3676  ls -ltr
+ 3677  vi test-unpushed 
+ 3678  ls -ltr
+ 3679  git branch -a
+ 3680  git fetch --all
+ 3681  git checkout origin/from_comet gitcommit 
+ 3682  ls -ltr
+ 3683  git add gitcommit 
+ 3684  git status
+ 3685  ./gitcommit 
+ 3686  ls -ltr
+ 3687  git status
+ 3688  git push
+ 3689  git commit --amend
+ 3690  git push
+ 3691  git pull
+ 3692  gitk --all
+ 3693  bg
+ 3694  git commit --amend
+ 3695  git commit --amend HEAD^
+ 3696  git commit --help
+ 3697  git rebase -i 1d23713
+ 3698  git rebase -i 1d237135
+ 3699  git lg
+ 3700  git rebase -i 10237135
+ 3701  git status
+ 3702  git lg
+ 3703  git push 
+ 3704  git push --help 
+ 3705  git push -f
+ 3706  git fetch --all
+ 3707  ls -ltr
+ 3708  git status
+ 3709  git ls-files -m
+ 3710  git ls-files -s
+ 3711  git ls-files --help
+ 3712  pd
+ 3713  popd
+ 3714  ls -ltr
+ 3715  echo this is a test | mail -s test cmdrae@gmail.com
+ 3716  mailq
+ 3717  mutt
+ 3718  pine
+ 3719  date
+ 3720  man at
+ 3721  mail
+ 3722  at 21:00
+ 3723  crontab  -l
+ 3724  pd
+ 3725  pushd
+ 3726  git status
+ 3727  pushd
+ 3728  git status --porcelain
+ 3729  ls
+ 3730  pushd ~/PRG
+ 3731  pushd ~/PROGS/
+ 3732  ls
+ 3733  git status
+ 3734  git status --porcelain
+ 3735  git status --porcelain -s
+ 3736  git status --porcelain -u
+ 3737  git status --porcelain -o
+ 3738  git status --porcelain -b
+ 3739  git status --porcelain -u
+ 3740  git status --porcelain 
+ 3741  git branch -a
+ 3742  git branch -avv
+ 3743  git remote -v
+ 3744  ls -lt ~/.gitconfig*
+ 3745  pd
+ 3746  popd
+ 3747  vi duncombe/gitconfig_extras 
+ 3748  git mystat
+ 3749  vi duncombe/gitconfig_extras 
+ 3750  git mystat
+ 3751  vi duncombe/gitconfig_extras 
+ 3752  git mystat
+ 3753  git status
+ 3754  git add duncombe/gitconfig_extras 
+ 3755  gitcommit
+ 3756  rehash
+ 3757  hash -r
+ 3758  gitcommit
+ 3759  ls ~/PROGS/
+ 3760  echo $PATH
+ 3761  grep PATH ~/.*
+ 3762  grep PATH ~/.* | less
+ 3763  vi duncombe/bash_profile 
+ 3764  ls ~/.bash_profile
+ 3765  grep /PATH ~/.*
+ 3766  echo $PATH
+ 3767  PATH=`echo $PATH | sed 's=PATH=PROGS='` 
+ 3768  which gitcommit
+ 3769  gitcommit
+ 3770  git push
+ 3771  ( firefox http://localhost:1313 )&
+ 3772  pd
+ 3773  pushd
+ 3774  ls -ltr
+ 3775  vi website-install.md 
+ 3776  ./generate.sh 
+ 3777  vi README.md 
+ 3778  pd
+ 3779  pushd ~/bin/
+ 3780  ls
+ 3781  ls -altr
+ 3782  ln -sf hugo_0.11_linux_amd64/hugo_0.11_linux_amd64 hugo
+ 3783  ls -l;tr
+ 3784  ls -l
+ 3785  ls -ltr
+ 3786  rm hugo
+ 3787  ls -ltr
+ 3788  ln -sf hugo_0.11_linux_amd64/hugo_0.11_linux_amd64 hugo
+ 3789  ls
+ 3790  ls -ltr
+ 3791  pd
+ 3792  pushd 
+ 3793  ls -ltr
+ 3794  git mystat
+ 3795  vi .gitignore 
+ 3796  git status
+ 3797  rm content/.gitkeep 
+ 3798  git status
+ 3799  git rm "content/.gitkeep\r"
+ 3800  git rm "content/.gitkeep"
+ 3801  git status
+ 3802  gitcommit 
+ 3803  git push
+ 3804  vi content/index.md 
+ 3805  vi layouts/index.html 
+ 3806  hugo11 version >version.txt
+ 3807  ls -altr
+ 3808  mv -i version.txt content/
+ 3809  vi layouts/index.html 
+ 3810  rm content/version.txt 
+ 3811  git status
+ 3812  ./generate.sh 
+ 3813  hugo11
+ 3814  ./update.sh 
+ 3815  gitk --all
+ 3816  ls -altr
+ 3817  mkdir temp
+ 3818  cd temp/
+ 3819  cd ..
+ 3820  rmdir temp/
+ 3821  git clone ssh://git@github.com/duncombe/glossary.git temp
+ 3822  cd temp/
+ 3823  git checkout gh-pages
+ 3824  ls -altr
+ 3825  rm -r *
+ 3826  cd ..
+ 3827  cp -ai public/* temp/
+ 3828  cd temp/git status
+ 3829  cd temp
+ 3830  git status
+ 3831  git mystatus
+ 3832  git mystat
+ 3833  git add -v -A
+ 3834  gitcommit 
+ 3835  git push 
+ 3836  cd ..
+ 3837  vi update.sh 
+ 3838  rm -f temp/
+ 3839  rm -rf temp/
+ 3840  git clone -b gh-pages ssh://git@github.com/duncombe/glossary.git temp
+ 3841  cd temp/
+ 3842  ls
+ 3843  cd ..
+ 3844  ls
+ 3845  rm -rf temp/
+ 3846  ./generate.sh 
+ 3847  hugo11
+ 3848  vi update.sh 
+ 3849  ./update.sh 
+ 3850  git clone -b gh-pages ssh://git@github.com/duncombe/glossary.git temp
+ 3851  rm -rf temp/*
+ 3852  cp -ai public/* temp/
+ 3853  git status temp/
+ 3854  cd temp/
+ 3855  git mystat
+ 3856  ls
+ 3857  git add -v -A
+ 3858  git commit -m "Updating website `ftime`"
+ 3859  git push 
+ 3860  history
+ 3861  man mktemp
+ 3862  git clone --help
+ 3863  TEMPDIR=`mktemp -d`
+ 3864  echo $TEMPDIR 
+ 3865  git clone -b gh-pages ssh://git@github.com/duncombe/glossary.git $TEMPDIR
+ 3866  ls -ltr $TEMPDIR 
+ 3867  ls -ltr
+ 3868  cd ..
+ 3869  ls
+ 3870  ls -altr
+ 3871  rm -rf temp/
+ 3872  vi README.md 
+ 3873  ./generate.sh 
+ 3874  vi layouts/index.html 
+ 3875  vi layouts/chrome/sidebar.html 
+ 3876  vi runhugo
+ 3877  man bash
+ 3878  vi runhugo
+ 3879  man bash
+ 3880  man test
+ 3881  vi runhugo
+ 3882  chmod +x runhugo 
+ 3883  ./runhugo 
+ 3884  ./runhugo 11
+ 3885  ./runhugo 11 server -w
+ 3886  vi runhugo 
+ 3887  grep -rl "Created with Hugo.*DEFAULT" public/
+ 3888  grep -rl "Created with Hugo.*DEFAULT" public/ |  xargs -i sed "/Created with Hugo.*DEFAULT/s/DEFAULT/$HUGOVER/"
+ 3889  grep -rl "Created with Hugo.*DEFAULT" public/
+ 3890  grep -rl "Created with Hugo.*DEFAULT" public/ | xargs view
+ 3891  viuview 
+ 3892  uptime
+ 3893  w
+ 3894  whoami
+ 3895  ls
+ 3896  which hugo
+ 3897  which hugo/
+ 3898  ls -l hugo/
+ 3899  mv -i hugo_0.12_linux_amd64/ bin/
+ 3900  mv -i hugo bin/
+ 3901  ls -ltr bin/
+ 3902  ls -ltr software/
+ 3903  cd software/; wget https://github.com/spf13/hugo/releases/download/v0.11/hugo_0.11_linux_amd64.tar.gz
+ 3904  ls -altr 
+ 3905  cd ../bin/
+ 3906  ls -ltr
+ 3907  du -s ~
+ 3908  du -sh ~
+ 3909  du -sh ~/*
+ 3910  du -s ~/* | sort -n
+ 3911  ls -altr
+ 3912  tar tzvf ~/software/hugo_0.11_linux_amd64.tar.gz 
+ 3913  tar xzvf ~/software/hugo_0.11_linux_amd64.tar.gz 
+ 3914  ls -ltr
+ 3915  which hugo
+ 3916  vi ~/.bashrc_custom 
+ 3917  vi ~/.bashrc_local 
+ 3918  cd hugo_0.12_linux_amd64/
+ 3919  ls
+ 3920  ls -altr
+ 3921  ln -s hugo_0.12_linux_amd64 hugo12
+ 3922  ls -altr
+ 3923  cd ..
+ 3924  ls
+ 3925  Markdown.pl  hugo  hugo_0.11_linux_amd64  hugo_0.12_linux_amd64
+ 3926  vi ~/.bashrc_local 
+ 3927  ls -ltr
+ 3928  ln -s hugo_0.11_linux_amd64/hugo_0.11_linux_amd64 hugo11
+ 3929  ls -ltr
+ 3930  ln -s hugo_0.12_linux_amd64/hugo_0.12_linux_amd64 hugo12
+ 3931  which hugo
+ 3932  which hugo12
+ 3933  vi ~/.bashrc_local 
+ 3934  cd ../PRO
+ 3935  cd ../PROGS/
+ 3936  ls -altr
+ 3937  git mystat
+ 3938  git checkout from_comet
+ 3939  ls -altr
+ 3940  view vertsect 
+ 3941  git checkout master
+ 3942  git mystat
+ 3943  firefox &
+ 3944  cd ~/IOOS/glossary/
+ 3945  ls -ltr
+ 3946  ps ax | grep hugo
+ 3947  ./runhugo server
+ 3948  cat runhugo 
+ 3949  vi runhugo 
+ 3950  cat runhugo 
+ 3951  hugo server
+ 3952  hugo server -w
+ 3953  TEMPDIR=`mktemp -d`
+ 3954  git clone -b gh-pages ssh://git@github.com/duncombe/glossary.git $TEMPDIR
+ 3955  rm -rf $TEMPDIR/*
+ 3956  cp -a public/* $TEMPDIR
+ 3957  (     cd $TEMPDIR;     git add -v -A;     git commit -m "Updating website `date`";     git push; )
+ 3958  ls -altr
+ 3959  git status
+ 3960  vi .gitignore 
+ 3961  git status
+ 3962  vi .gitignore 
+ 3963  git status
+ 3964  vi .gitignore 
+ 3965  git status
+ 3966  vi .gitignore 
+ 3967  git status
+ 3968  git rm -r public
+ 3969  git rm --cached -r public
+ 3970  git status
+ 3971  vi .gitignore 
+ 3972  which gitcommit
+ 3973  PATH=`echo $PATH|sed "s/PATH/PROGS/"`
+ 3974  which gitcommit
+ 3975  git add -A -v
+ 3976  git status
+ 3977  gitcommit
+ 3978  ./generate.sh 
+ 3979  ./runhugo 
+ 3980  git status
+ 3981  cat ./update.sh 
+ 3982  ./update.sh 
+ 3983  ls -altr /tmp/
+ 3984  rm -rf /tmp/tmp.*
+ 3985  ls -ltr
+ 3986  vi runhugo 
+ 3987  vi update.sh 
+ 3988  vi config.toml 
+ 3989  ./generate.sh 
+ 3990  ./runhugo 
+ 3991  ./update.sh 
+ 3992  cd ..
+ 3993  conda list
+ 3994  conda list| less
+ 3995  ls ~/anaconda/envs/
+ 3996  activate glider_test
+ 3997  source activate glider_test
+ 3998  ipython notebook 
+ 3999  bg
+ 4000  jobs
+ 4001  fg
+ 4002  which hugo
+ 4003  which hugo11
+ 4004  cd IOOS/glossary/
+ 4005  git mystat
+ 4006  git status --help
+ 4007  git mystat
+ 4008  gitk --all 
+ 4009  git pull
+ 4010  ls public/
+ 4011  ls public/images/
+ 4012  ls static/images/
+ 4013  git status
+ 4014  git mystat
+ 4015  gitk --all
+ 4016  vi README.md 
+ 4017  ls -altr
+ 4018  vi generate.sh 
+ 4019  vi update.sh 
+ 4020  ./generate.sh 
+ 4021  hugo12 server -w 
+ 4022  hugo11 server -w 
+ 4023  hugo version
+ 4024  rehash
+ 4025  hugo version
+ 4026  echo $PATH
+ 4027  whereis hugo
+ 4028  hugo11 version
+ 4029  hugo12 version
+ 4030  hugo11 server -w 
+ 4031  git clone --help
+ 4032  vi update.sh 
+ 4033  hugo server -w 
+ 4034  echo $1
+ 4035  echo $SSH_CONNECTION 
+ 4036  man bash
+ 4037  arr=($SSH_CONNECTION)
+ 4038  echo $arr[1]
+ 4039  echo ${arr[1]}
+ 4040  echo ${arr[0]}
+ 4041  echo ${arr[@]}
+ 4042  echo ${arr[*]}
+ 4043  arr=($SSH_CONNECTION $pewe)
+ 4044  echo ${arr[*] }
+ 4045  arr=(${arr[@]} $SSH_CONNECTION)
+ 4046  echo ${arr[*] }
+ 4047  hugo -w server
+ 4048  hugo -w
+ 4049  ./runhugo server -w
+ 4050  vi runhugo 
+ 4051  cat runhugo 
+ 4052  grep -rl "Created with Hugo.*DEFAULT" public/ 
+ 4053  sed "/Created with Hugo.*DEFAULT/s/DEFAULT/$HUGOVER/"  public/index.html| less
+ 4054  HUGOVER=`$HUGOBIN version`
+ 4055  HUGOBIN="hugo"
+ 4056  vi runhugo 
+ 4057  HUGOBIN="hugo"
+ 4058  HUGOVER=`$HUGOBIN version`
+ 4059  grep -rl "Created with Hugo.*DEFAULT" public/
+ 4060  view public/
+ 4061  view public/index.html 
+ 4062  HUGOVER=`$HUGOBIN version | awk '{print NF}'`
+ 4063  echo $HUGOVER 
+ 4064  HUGOVER=`$HUGOBIN version | awk '{print $NF}'`
+ 4065  echo $HUGOVER 
+ 4066  sed -i "/Created with Hugo.*DEFAULT/s/DEFAULT/$HUGOVER/"  public/about/index.html public/website-install/index.html 
+ 4067  grep -rl "Created with Hugo.*DEFAULT" public/
+ 4068  hugo 
+ 4069  grep -rl "Created with Hugo.*DEFAULT" public/ |         xargs sed -i "/Created with Hugo.*DEFAULT/s/DEFAULT/$HUGOVER/"
+ 4070  ./generate.sh 
+ 4071  ./runhugo 
+ 4072  ls -ltr
+ 4073  view update.sh 
+ 4074  ls -altr
+ 4075  cd ../system-test/
+ 4076  ls -ltr
+ 4077  git status
+ 4078  git mystat
+ 4079  git fetch --all
+ 4080  git mystat
+ 4081  vi ~/.gitconfig_extras 
+ 4082  git mystat
+ 4083  vi ~/.gitconfig_extras 
+ 4084  git mystat
+ 4085  git fetch --all
+ 4086  gitk --all &
+ 4087  git pull --rebase upstream master
+ 4088  git push
+ 4089  git checkout glider-data
+ 4090  ls -ltr
+ 4091  ls
+ 4092  ipython notebook 
+ 4093  vi README.md 
+ 4094  firefox &
+ 4095  vi README.md 
+ 4096  jobs
+ 4097  git status
+ 4098  git add -A -v
+ 4099  gitcommit 
+ 4100  git push
+ 4101  cd IOOS/
+ 4102  ls
+ 4103  which gitcommit
+ 4104  ls 
+ 4105  ls -ltr
+ 4106  conda show
+ 4107  conda help
+ 4108  conda list envs
+ 4109  conda list --envs
+ 4110  conda list --env
+ 4111  conda info
+ 4112  conda info --envs
+ 4113  ls -ltr
+ 4114  jobs
+ 4115  test-unpushed 
+ 4116  pwd
+ 4117  cd IOOS/glossary/
+ 4118  git mystat
+ 4119  git add -A -v
+ 4120  git commit -m "Update website `date`"
+ 4121  git push
+ 4122  TEMPDIR=`mktemp -d`
+ 4123  git clone -b gh-pages ssh://git@github.com/duncombe/glossary.git $TEMPDIR
+ 4124  rm -rf $TEMPDIR/*
+ 4125  cp -a public/* $TEMPDIR
+ 4126  (     cd $TEMPDIR;     git add -v -A;     git commit -m "Updating website `date`";     git push; )
+ 4127  rm -rf dummy $TEMPDIR
+ 4128  ls -altr /tmp/
+ 4129  cd PROGS/
+ 4130  git mystat
+ 4131  git fetch --all
+ 4132  gitk --all &
+ 4133  git checkout from_comet
+ 4134  git mystat
+ 4135  git pull 
+ 4136  git status
+ 4137  git checkout master
+ 4138  git mystat
+ 4139  cd ../centos-instance/
+ 4140  gitk --all &
+ 4141  git pull
+ 4142  cd ../sys
+ 4143  cd ../IOOS/system-test/
+ 4144  git status
+ 4145  git fetcch --all
+ 4146  git fetch --all
+ 4147  gitk --all &
+ 4148  git mystat
+ 4149  git checkout master
+ 4150  git checkout glider-data
+ 4151  cd ../netcdf-guidelines/
+ 4152  git status
+ 4153  git fetch --all
+ 4154  gitk --all &
+ 4155  git mystat
+ 4156  git add upstream https://github.com/dpsnowden/netcdf-guidelines.git
+ 4157  git remote add upstream https://github.com/dpsnowden/netcdf-guidelines.git
+ 4158  git fetch --all
+ 4159  gitk --all &
+ 4160  git checkout master
+ 4161  git pull --rebase upstream master
+ 4162  git push origin master
+ 4163  git branch -d readme-update
+ 4164  git push origin :readme-update
+ 4165  cd ../unidata-python-workshop/
+ 4166  git mystat
+ 4167  gitk --all
+ 4168  git diff
+ 4169  git diff HEAD^
+ 4170  git diff HEAD
+ 4171  git diff HEAD^
+ 4172  git fetch --all
+ 4173  gitk --all
+ 4174  cd ../vocabularies/
+ 4175  gitk --all 
+ 4176  cd ../registry/
+ 4177  git fetch --all
+ 4178  gitk --all &
+ 4179  git pull --rebase upstream master
+ 4180  git branch -a
+ 4181  git branch -avv
+ 4182  git rebase --abort
+ 4183  git pull -f upstream master
+ 4184  git push origin master
+ 4185  cd ../glossary/
+ 4186  git status
+ 4187  gitk --all
+ 4188  ls -altr
+ 4189  vi README.md 
+ 4190  ./generate.sh 
+ 4191  vi runhugo 
+ 4192  ./runhugo 
+ 4193  vi ./update.sh 
+ 4194  vi README.md 
+ 4195  ./generate.sh 
+ 4196  ./runhugo 
+ 4197  ./update.sh 
+ 4198  w
+ 4199  cd IOOS/
+ 4200  ls -ltr
+ 4201  cd system-test/
+ 4202  cd ..
+ 4203  source activate glider-test
+ 4204  source activate glider_test
+ 4205  ipython notebook
+ 4206  bg
+ 4207  conda deactivate
+ 4208  source  deactivate
+ 4209  ls -ltr
+ 4210* 
+ 4211  kill %1
+ 4212  jobs
+ 4213  source activate glider_test
+ 4214  source  deactivate
+ 4215  source activate myenv
+ 4216  ls /home/cduncomberae/anaconda/envs/myenv/bin
+ 4217  ipython notebook &
+ 4218  conda install ipython
+ 4219  ipython notebook &
+ 4220  conda update conda
+ 4221  conda install conda
+ 4222  conda update ipython
+ 4223  ipython notebook &
+ 4224  pip install ipython[all]
+ 4225  conda update ipython-notebook
+ 4226  conda install ipython-notebook
+ 4227  ipython notebook &
+ 4228  ps ax | grep note
+ 4229  ps ax | grep note | less -S
+ 4230  netstat -pant
+ 4231  netstat -pant | less 
+ 4232  ps ax | grep python
+ 4233  killall -9 python
+ 4234  ps ax | grep python
+ 4235  killall -9 python
+ 4236  ps ax | grep python
+ 4237  kill 769
+ 4238  ps ax | grep python
+ 4239  killall /home/cduncomberae/anaconda/envs/workshop/bin/python
+ 4240  ps ax | grep python
+ 4241  killall /home/cduncomberae/anaconda/envs/glider_test/bin/python
+ 4242  ps ax | grep python
+ 4243  ipython notebook &
+ 4244  conda install netcdf4
+ 4245  history
+ 4246  history > system-test/Theme_4_Glider_Data_Visualization/Glider_Data/history
