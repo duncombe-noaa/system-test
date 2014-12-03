@@ -1,4 +1,6 @@
-# create the environment that works for this notebook
+#! /bin/bash
+#
+## create the environment that works for this notebook
 # 
 
 # what works for the workshop
@@ -27,6 +29,28 @@
 # conda config --add channels https://conda.binstar.org/rsignell  || { echo failed at 3; exit 3 ;}
 # conda install -p /projects/duncombe/Theme4GliderData/envs/glider_test  iris pyoos netcdf4 || { echo failed at 4; exit 4 ;}
 
+# this works
+# source deactivate
+# conda config --add channels https://conda.binstar.org/rsignell
+# conda config --add channels https://conda.binstar.org/Unidata
+ENVI=myenv
+
+if ! conda info -e | grep myenv > /dev/null ; then 
+	conda create -n myenv		\
+		python=2		\
+		numpy			\
+		matplotlib		\
+		cartopy			\
+		ipython			\
+		ipython-notebook	\
+		netcdf4			\
+		owslib			\
+		pyudl			\
+		networkx		\
+		basemap
+fi
+
+source activate myenv
 
 # vim: se nowrap tw=0 :
 
