@@ -2,8 +2,10 @@
 # $ conda create --name <env> --file <this file>
 # platform: linux-64
 basemap=1.0.7=np19py27_0
+binstar=0.9.5=py27_0
 cairo=1.12.18=0
 cartopy=0.11.2=np19py27_0
+clyent=0.3.2=py27_0
 curl=7.38.0=0
 dateutil=2.1=py27_2
 decorator=3.4.0=py27_0
@@ -39,9 +41,11 @@ python=2.7.8=1
 python-dateutil=2.2=py27_0
 pytz=2014.9=py27_0
 pyudl=0.2=py27_0
+pyyaml=3.11=py27_0
 pyzmq=14.4.1=py27_0
 qt=4.8.5=0
 readline=6.2=2
+requests=2.5.0=py27_0
 scipy=0.14.0=np19py27_0
 setuptools=7.0=py27_0
 shapely=1.5.0=py27_0
@@ -52,5 +56,6 @@ ssl_match_hostname=3.4.0.2=py27_0
 system=5.8=1
 tk=8.5.15=0
 tornado=4.0.2=py27_0
+yaml=0.1.4=0
 zeromq=4.0.4=0
 zlib=1.2.7=0
